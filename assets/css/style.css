@@ -1,0 +1,106 @@
+*{
+    color: #fff;
+}
+
+header {
+    overflow: hidden;
+    transition: navbar-scroll;
+    view-timeline-name: --nav;
+    view-timeline-axis: block;
+    animation-timeline: --nav;
+    animation-name: navbar-scroll;
+
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+header .nav .nav-item .nav-link{
+    color: #fff;
+}
+
+@keyframes navbar-scroll {
+    from {
+        opacity: 0;
+        /* background-color:red; */
+
+    }
+    to {
+        background-color: #ffffff;
+        opacity: 1;
+    }
+}
+
+
+/* section.banner{
+    height: 80%;
+} */
+
+section.banner{}
+section.banner img{
+    height: 100vh;
+}
+
+
+section.quienes-somos{
+    background-color: #000;
+}
+
+
+section.quienes-somos .card{
+    border: none;
+    border-radius: 0;
+    
+}
+section.quienes-somos .card .card-head{
+    background-color: #03ceec;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0px;
+}
+
+section.quienes-somos .card .card-body{
+    background-color: #000;
+    color: #fff;
+}
+
+
+section.destacados{
+    background-color: #000;
+}
+
+section.destacados .card img{
+    max-height: 190px;
+}
+
+section.destacados .card .card-body{
+    background-color: #03ceec;
+}
+
+section.form{
+    background-color: #000;
+}
+
+
+footer{
+    background-color: #03ceec;
+}
+
+
+
+@media screen and (min-width: 762px) {
+
+    section.banner img{
+        height: 30vh;
+    }
+
+    .card .card-mountain{
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    
+}
